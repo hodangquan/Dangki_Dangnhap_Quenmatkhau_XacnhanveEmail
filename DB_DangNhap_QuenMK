@@ -1,0 +1,16 @@
+CREATE DATABASE Lab_78_1
+go
+USE Lab_78_1
+go
+
+CREATE TABLE TAIKHOAN(
+    TenTK VARCHAR(50) NOT NULL PRIMARY KEY,
+    MatKhau VARCHAR(50),
+    HoTen NVARCHAR(50),
+    Email VARCHAR(50)
+)
+
+SELECT TenTK, MatKhau, HoTen, Email FROM TAIKHOAN
+
+INSERT INTO TAIKHOAN VALUES ('quanhd' , '123' , N'', 'quanhdph24157@gmail.com')
+UPDATE TAIKHOAN SET Email = 'quanhdph24157@fpt.edu.vn' WHERE TenTK = 'quanhd'
